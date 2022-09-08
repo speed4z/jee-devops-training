@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd"
+		default-lazy-init="true"
+		>
+		
+<bean id="emp3" class="com.springlab.q4.Employee">
+<constructor-arg value="101"></constructor-arg>
+<constructor-arg value="Max Verstappen"></constructor-arg>
+<constructor-arg value="40000.0"></constructor-arg>
+</bean>
+<bean id="emp4" class="com.springlab.q4.Employee">
+<constructor-arg value="102"></constructor-arg>
+<constructor-arg value="Sam Curran"></constructor-arg>
+<constructor-arg value="70000.0"></constructor-arg>
+</bean>
+<bean id="emp5" class="com.springlab.q4.Employee">
+<constructor-arg value="103"></constructor-arg>
+<constructor-arg value="Charles Leclerc"></constructor-arg>
+<constructor-arg value="125000.0"></constructor-arg>
+</bean>
+<bean id="emp6" class="com.springlab.q4.Employee">
+<constructor-arg value="104"></constructor-arg>
+<constructor-arg value="Cohn Jena"></constructor-arg>
+<constructor-arg value="20000.0"></constructor-arg>
+</bean>
+<bean id="emp7" class="com.springlab.q4.Employee">
+<constructor-arg value="105"></constructor-arg>
+<constructor-arg value="Sergio Perez"></constructor-arg>
+<constructor-arg value="100000.0"></constructor-arg>
+</bean>	
+	
+</beans>

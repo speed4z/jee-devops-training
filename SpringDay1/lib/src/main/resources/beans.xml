@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd"
+        default-lazy-init="true"
+        >
+        
+<bean id="emp1" class="com.training.entities.Employee">
+<constructor-arg value="101"></constructor-arg>
+<constructor-arg value="john"></constructor-arg>
+<constructor-arg value="2022-09-12"></constructor-arg>
+</bean>
+
+<bean id="address" class="com.training.entities.Address">
+<constructor-arg value="3434"></constructor-arg>
+<constructor-arg value="the signature"></constructor-arg>
+<constructor-arg value="MG marg"></constructor-arg>
+<constructor-arg value="Mumbai"></constructor-arg>
+</bean>
+
+<bean id="address2" class="com.training.entities.Address">
+<constructor-arg value="3411421"></constructor-arg>
+<constructor-arg value="The Address"></constructor-arg>
+<constructor-arg value="MG marg"></constructor-arg>
+<constructor-arg value="Navi Mumbai"></constructor-arg>
+</bean>
+
+<bean id="emp2" class="com.training.entities.Employee" parent="emp1">
+        <constructor-arg ref="address2"></constructor-arg>
+</bean>
+
+        
+ <bean id ="student1" class = "com.training.entities.Student">
+ <constructor-arg value = "101"></constructor-arg>
+  <constructor-arg value = "Sam"></constructor-arg>
+   <constructor-arg>
+   <map>
+   <entry key="programming language" value="java"></entry>
+   <entry key="rdbms" value="postgresql"></entry>
+   <entry key="orm" value="hibernate"></entry>
+   </map>
+   </constructor-arg>  
+ </bean>
+ 
+  <bean id ="st2" class = "com.training.entities.Student">
+  <property name="id"> <value>1111</value> </property>
+  <property name="name"> <value>"Lora"</value>  </property>
+  </bean>
+
+<bean id="vendor1" class="com.training.entities.Vendor">
+<constructor-arg value="101"></constructor-arg>
+<constructor-arg value="Apple Inc"></constructor-arg>
+</bean>
+ 
+<bean id="prod1" class="com.training.entities.Product" autowire="byName">
+<property name="id" value="333"></property>
+<property name="name" value="iphone"></property>
+</bean>
+
+
+<bean id="prod2" class="com.training.entities.Product" factory-method="getProduct" ></bean>
+<bean id="printable" class="com.training.entities.PrintableFactory" factory-method="getPrintable"></bean> 
+       
+        
+
+</beans>

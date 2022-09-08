@@ -1,0 +1,6 @@
+projectKey=Hello
+serverUrl=http://localhost:8585
+serverVersion=8.9.8.54436
+dashboardUrl=http://localhost:8585/dashboard?id=Hello
+ceTaskId=AYADs6XHxfBITiHoQKj8
+ceTaskUrl=http://localhost:8585/api/ce/task?id=AYADs6XHxfBITiHoQKj8

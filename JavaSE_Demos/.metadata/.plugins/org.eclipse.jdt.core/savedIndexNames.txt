@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+E:\Desktop\capG\Material\JEECloudGCPmaterials\Module-1\Core Java 8  and Development Tools\Demo\JavaSE_Demos\.metadata\.plugins\org.eclipse.jdt.core
+2478596348.index
+2645187749.index
+1865797976.index

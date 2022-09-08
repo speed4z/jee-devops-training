@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd"
+        default-lazy-init="true"
+        >
+<bean id="emp1" class="com.springlab.q1.Employee">
+<constructor-arg value="101"></constructor-arg>
+<constructor-arg value="john"></constructor-arg>
+<constructor-arg value="20000"></constructor-arg>
+<constructor-arg value="Programming"></constructor-arg>
+<constructor-arg value="22"></constructor-arg>
+</bean>
+
+<bean id="sbu1" class="com.springlab.q2.SBU">
+<constructor-arg value="1"></constructor-arg>
+<constructor-arg value="PES-BU"></constructor-arg>
+<constructor-arg value="Pratik"></constructor-arg>
+</bean>
+
+<bean id="emp2" class="com.springlab.q2.Employee2">
+<constructor-arg value="102"></constructor-arg>
+<constructor-arg value="Sam"></constructor-arg>
+<constructor-arg value="30000"></constructor-arg>
+<constructor-arg ref="sbu1"></constructor-arg>
+</bean>
+
+
+</beans>
